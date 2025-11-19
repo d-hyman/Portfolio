@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaf Watch | Daniel Hyman</title>
+  <link rel="stylesheet" href="leaf_watch.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Leaf Watch</h1>
+      <p>Tracking Deforestation Rates around the world</p>
+      <a href="../../index.html" class="back-button">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Project Overview Section -->
+    <section class="section">
+      <h2>Project Overview</h2>
+      <p>
+        Large scale deforestation accelerates soil errosion, habitat loss, and intensifies climate change. 
+        This can come from direct human activity such as forest clearing, or from wildfires intensified by climate change. 
+        Desbite global reforestation initiatives, trees are rarely replanted in areas which require them the most, leading to drastic differences in deforestation rates around the world.
+        Today, there is no public, location-specific tool to see where this decline is most severe, which results in trees being planted in unncessary locations.
+      </p>
+      <p>
+        Introducing Leaf Watch, a web application that allows users to visualize deforestation rates around the world using satellite data from NASA.
+        Producing, targeted, data-driven reforestation—getting the right trees into the right places at the right time for the biggest ecological impact.
+      </p>
+
+      <!-- Project Links -->
+      <div class="project-links">
+        <a href="https://github.com/d-hyman/Leaf-Watch/" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Add project images/screenshots here -->
+      <div class="image-gallery">
+        <img src="../../images/Leaf-watch-1.png" alt="Project Screenshot 1">
+        <img src="../../images/Leaf-watch-2.png" alt="Project Screenshot 2">
+        <img src="../../images/ml_model1.png" alt="Project Screenshot 3">
+        <img src="../../images/ml_model2.png" alt="Project Screenshot 4">
+      </div>
+
+    <!-- Features Section -->
+    <section class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Feature 1:</strong> Explore NDVI and thermal data on an interactive Map</li>
+        <li><strong>Feature 2:</strong> View a timelapse or scoll through past years to see changes over time</li>
+        <li><strong>Feature 3:</strong> Utlize a Machine Learning model that predicts future trends based on historoical data</li>
+        <li><strong>Feature 4:</strong> Analyze detailed charts and visualizations of past and predicted metrics</li>
+        <li><strong>Feature 5:</strong> Converse with an integrated AI Assistant</li>
+
+      </ul>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li><strong>Frontend:</strong> JavaScript, React, React-Dom library, Leaflet.js</li>
+        <li><strong>Backend:</strong> Python, Node.js, FastAPI</li>
+        <li><strong>APIs:</strong> NASA API, React-Dom APIs</li>
+      </ul>
+    </section>
+
+    <!-- How to run Section -->
+    <section class="section">
+      <h2>How to run locally via terminal</h2>
+      <p></p>
+      <ul>
+        <li>Install node.js: <code>install npm</code></li>
+        <li>Create Python Enviornment: <code>python -m venv venv</code></li>
+        <li>Enter backend directory: <code>cd backend</code></li>
+        <li>Install server via FastAPI: <code>install fastAPI uvicorn</code></li>
+        <li>Run main backend file: <code>uvicorn main:app --reload</code></li>
+        <li>Run website locally: <code>npm run dev</code></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="mailto:danielHyman20@gmail.com">Email</a> |
+      <a href="https://github.com/d-hyman" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/d-hyman" target="_blank">LinkedIn</a> |
+      <a href="../../daniel_hyman_resume.pdf" target="_blank">Resume</a> |
+      <a href="../../index.html">Return to Home</a>
+    </p>
+  </footer>
+  <script src="projects/leaf_watch/leaf_watch.js"></script>
+</body>
+</html>
