@@ -167,11 +167,24 @@
 
     .section li strong {
       color: #64ffda;
+      margin: 0.8 rem;
     }
 
     .overview{
         display: grid;
     }
+
+      .imgLabel {
+        padding: 1.5rem;        /* smaller than section's 3rem */
+        margin-bottom: 2rem;   /* smaller than section's 4rem */
+      }
+
+      .imgLabel p {
+        color: white;
+        margin-bottom: 0.4rem; /* tighter text spacing */
+        line-height: 1.4;
+        text-align: center;    /* optional */
+      }
 
     /* Image Gallery */
     .image-gallery {

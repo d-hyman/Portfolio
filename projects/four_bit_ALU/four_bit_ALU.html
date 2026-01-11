@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaf Watch | Daniel Hyman</title>
+  <link rel="stylesheet" href="four_bit_ALU.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Four Bit Arithmetic Logic Unit</h1>
+      <p>The fundemental digital circuit within a CPU</p>
+      <a href="../../index.html" class="back-button">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Project Overview Section -->
+    <section class="overview section">
+      <h2>Project Overview</h2>
+      <p>
+        This digital system is a modular 4-bit ALU that performs 12 operations: 8 arithmetic and 4 logical. 
+        The ALU accepts two 4-bit operands (A & B), three selection inputs (S2, S1, S0) and a carry input (Cin), 
+        and outputs a 4-bit result plus a carry out. 
+        Then these results would be shown on the Seven-Segment display. 
+        This digital system consists of: a B input logic unit to modify operand B, a full adder based arithmetic unit, 
+        a multiplexer-based logic unit, a 1-bit ALU combining both units, a 4-bit ALU created from four 1-bit ALU, 
+        and finally a seven-segment decoder.  
+    </p>
+    <p>
+        The design follows a modular and hierarchical structure because this approach mirrors real digital system and CPU data path design, making the ALU easier to construct, verify, and debug. Separating the arithmetic unit, logic unit, B input logic, and full adder into individual components allows each module to perform one well defined function, which improves clarity and ensures that errors can be solved quickly. Using structural VHDL reinforces hardware accurate modeling by explicitly showing how signals flow between modules. Integrating the arithmetic and logic paths with a single select signal (S2) reflects standard ALU design practices and ensures clean operation switching. 
+        The seven-segment decoder supports direct hardware verification on the FBGA board.    
+    </p>
+        <img src="../../images/four_bit_ALU/FPGA_img.jpg" alt="FPGA" width="400" height=auto>
+
+    </section>
+    
+    <!-- Add project images/screenshots here -->
+      <div class="image-gallery">
+        <img src="../../images/four_bit_ALU/function_table_1_bit_ALU.png" alt="Project Screenshot 1">
+        <img src="../../images/four_bit_ALU/block_diagram_ALU.png" alt="Project Screenshot 2">
+        <img src="../../images/four_bit_ALU/simulation_waveform_data.png" alt="Project Screenshot 3">
+       <div class="imgLabel section">
+            <p>Function Table - 1-bit ALU</p>
+            <p>Block Diagram of 4-bit ALU</p>
+            <p>Printed Simulation Waveform Data</p>
+        </div>
+      </div>
+
+    <!-- Technology Stack Section -->
+    <section class="section">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li><strong>Software:</strong> VHDL, XILINX/AMD Vivado </li>
+        <li><strong>Hardware:</strong> NEXYS 3 FPGA Board </li>
+      </ul>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="mailto:danielHyman20@gmail.com">Email</a> |
+      <a href="https://github.com/d-hyman" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/d-hyman" target="_blank">LinkedIn</a> |
+      <a href="../../daniel_hyman_resume.pdf" target="_blank">Resume</a> |
+      <a href="../../index.html">Return to Home</a>
+    </p>
+  </footer>
+  <script src="projects/four_bit_ALU/four_bit_ALU"></script>
+</body>
+</html>
