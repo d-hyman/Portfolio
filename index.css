@@ -257,13 +257,20 @@
       border-bottom: 3px solid rgba(100, 255, 218, 0.3);
     }
 
-    /* Projects Grid - Enhanced */
-    .projects-grid {
+       /* Projects Grid */
+     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       margin-top: 2rem;
+      align-items: start;
     }
+    
+    @media (max-width: 1024px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    } 
 
     .project {
       background: rgba(255, 255, 255, 0.03);
@@ -402,10 +409,10 @@
         font-size: 1.8rem;
       }
 
-      .projects-grid {
+      /* .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-      }
+      } */
 
       .section {
         padding: 1rem;
